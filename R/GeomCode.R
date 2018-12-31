@@ -255,7 +255,7 @@ storm_obs <- load_geom_data('data/ebtrk_atlc_1988_2015.txt') %>%
   filter_geom_data(hurr_name = 'Ike-2008', timing_obs = '2008-09-13 06:00:00')
 
 # Create map and add hurricane Ike storm observation
-ggmap::register_google(key = "AIzaSyAeMYF9LRJ2cCSAkWlIvlkq36KUxX8TeE8")
+ggmap::register_google(key = "XXX")
 map_ike <- get_map("Louisiana", zoom = 6, maptype = "toner-background") %>%
   ggmap(extent = "device") +
   geom_hurricane(data = storm_obs,
